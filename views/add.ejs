@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-functions.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/add.css">
+    <title>Document</title>
+</head>
+<body>
+    <% include navs/nav %>
+    <form id = "new_task">
+        <div class="add-box">
+            <div class="add-lable-box">
+              <p>
+                ADD TASK
+              </p>
+            </div>
+            <div class="name-lable title-lable">
+              title
+            </div>
+            <div class=" task-lable">
+              task
+            </div>
+            
+            <input class="data-box title-box" name="title" type="text">
+            <input class="data-box task-box" name="task" type="text">
+            <div class="info-lable">info</div>
+            <input class="info-box" name="info" type="text">
+            <button class="add-lable"><p>ADD</p></button>
+          </div>
+    </form>
+    <a href="/">בית</a>
+    <script src="./app.js"></script>
+</body>
+</html>
